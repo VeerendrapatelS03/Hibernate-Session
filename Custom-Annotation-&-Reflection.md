@@ -14,13 +14,12 @@
   `@interface MyAnnotation{ ...}`
 * Members can be declared but looks like methods. We should not provide implementation for these members.
  
-/*
- * @interface Bean{
- * Sting name();
- * }
- */
+    @interface Bean{
+      Sting name();
+    }
 
-/* @Bean(name="abc") */
+
+    @Bean(name="abc")
 
 * All annotations extends java.lang.annotation.Annotation interface. 
 * Use 'default' to assign default value to member
