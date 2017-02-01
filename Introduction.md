@@ -25,3 +25,9 @@ Examples are @Entity, @Cache, @Id, @Transit etc.
 * There are two layers of code - framework code & other is application code.
 * Hibernate provides framework code where the code you write as a developer provides application code.
 * This is a mechanism by which application code informs framework code that how should framework code treat application code.
+
+##Package Manager - Maven. Earlier Ant
+* Generates pom.xml
+* Just mention all dependencies of your project in pom.xml.
+* The dependencies xml code can be obtained from maven website
+* On saving the file, it downloads all required jars 
