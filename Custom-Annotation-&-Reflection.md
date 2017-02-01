@@ -1,3 +1,7 @@
+* Frameworks define annotation. This is done using @interface
+* Application uses the defined annotation. Application use @YourDefinedAnnotation to tell framework to to deal with.
+* Framework finds places where the annotation was used.And, it interprets accordingly. This is achieved using Reflexions.
+
 ##Annotations
 
 ##Types of Annotations
