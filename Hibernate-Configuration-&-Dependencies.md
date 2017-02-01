@@ -26,4 +26,10 @@ create - will create table no matter what.
 **mapping class**
 Here we mention the classes that we want to map to database.
 
+###Dependencies
 
+    <dependency>
+       <groupId>org.hibernate</groupId>
+       <artifactId>hibernate-core</artifactId>
+       <version>4.2.1.Final</version>
+     </dependency>
