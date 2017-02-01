@@ -1,14 +1,14 @@
 ##Hibernate Configuration can be done using two approaches
-1. XML Based configuration
+1. XML Based configuration. Define hibernate.cfg.xml in classpath.
 2. Annotation Based Configuration
 
-##Configuration Details
+##Configuration Details for hibernate.cfg.xml
 
 ###hibernate.dialect
-Dialect that Hibernate should use to talk to database. For e.g. 'org.hibernate.dialect.MySQLDialect'. 
+Talk to db. Dialect that Hibernate should use to talk to database. For e.g. 'org.hibernate.dialect.MySQLDialect'. 
 
 ###hibernate.connection.driver_class
-The driver required by jdbc layer of hibernate to talk to database. For e.g. 'com.mysql.jdbc.Driver'.
+Connect to db. The driver required by jdbc layer of hibernate to talk to database. For e.g. 'com.mysql.jdbc.Driver'.
 
 ###hibernate.connection.url
 Which database to connect.
