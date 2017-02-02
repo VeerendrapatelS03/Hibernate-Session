@@ -1,6 +1,12 @@
+##Terminology
+* Persistent Object - Objects along with which you call save() or persist().
+
 ###save
 * Used to save entity in database
 * Issue: If we use this without transaction & we have cascading between entities, then only primary key gets save unless we flush the session.
+
+For example, Employee have address. Employee & Address gets saved to different table. If we use save() without doing session.flush()/close(), only primary key gets saved not others.
+
 * We should not use save outside transaction boundaries.
 * save() method returns generated id immediately, this is possible because primary object is saved as soon as save method is invoked
 * If there are other objects mapped to the primary object, they gets saved at the time of committing transaction.
@@ -8,8 +14,8 @@
 * save() load entity object to persistent context.
 
 ###persist
-* Similar to save() & adds entity object to persistent context.
-* Persist itself takes care of cascaded objects
+* Similar to save() & persist() adds entity object to persistent context.
+* Persist itself takes care of cascaded objects. That means the related objects.
 * Persist doesn't return anything, persist object is used to get generated identifier.
 
 ###saveOrUpdate
@@ -30,23 +36,28 @@
  
     Employee emp = (Employee) session.load(Employee.class, 1L);
      emp.age = 66;
+     emp.addr.name = "bangalore";
      Transaction tx = session.beginTransaction();
      Employee emp1 = session.merge(emp);
-     emp1 is tracked for changes
-     emp is not tracked for changes
+     **emp1 is tracked for changes**
+     **emp is not tracked for changes**
      emp1.age = 100
      emp.age = 50
      tx.commit()
+     session.close()
 
 
 ###session.load(Student.class,1L)
+This is to bring persistent object as entity
 1. This always return a proxy object.
 2. Proxy Object - hibernate will always prepare some fake object with a id (1L) in memory without hitting db.
-3. It won't populate other member information like name & salary.
-4. The other information will be populated only when we try to retrieve the other properties.
-5. If row is null, it returns ObjectNotFoundException
+3. Delay's memory access
+4. It won't populate other member information like name & salary.
+5. The other information will be populated only when we try to retrieve the other properties.
+6. If row is null, it returns ObjectNotFoundException
 
 ###session.get(Student.class,1L)
+This is to bring persistent object as entity
 1. It hits database immediately & returns the original object.
 2. If row is null, it returns null 
 
