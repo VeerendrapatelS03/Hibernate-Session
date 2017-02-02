@@ -9,13 +9,13 @@ Not only one key, but group of keys together working as primary key. This is kno
 * Annotating members of primary key with @Id
 * Create a separate class with Primary Key Elements & use @EmbeddedId
 * Using Embeddable class
-* Mostly converting existing stuff into compounded primary key
 
 ###1st Approach
 * Annotating each member with @Id
 * Mentioning the Id class with @IdClass
 * Id Class should always be serializable 
 * Constructor, setter-getter, equals & hashcode implemented.
+* Mostly converting existing stuff into compounded primary key
 
 ###2nd Approach
 * Annotating the primary key with @EmbeddedId
