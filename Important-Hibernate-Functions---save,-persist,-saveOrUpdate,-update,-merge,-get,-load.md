@@ -34,7 +34,7 @@
 * Return object can be tracked for further changes but passed object cannot.
 
  
-    Employee emp = (Employee) session.load(Employee.class, 1L);
+     Employee emp = (Employee) session.load(Employee.class, 1L);
      emp.age = 66;
      emp.addr.name = "bangalore";
      Transaction tx = session.beginTransaction();
