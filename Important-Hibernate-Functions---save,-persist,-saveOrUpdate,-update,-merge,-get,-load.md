@@ -61,6 +61,13 @@ This is to bring persistent object as entity
 1. It hits database immediately & returns the original object.
 2. If row is null, it returns null 
 
+    Employee e1 = (Employee) session.get(Employee.class, 35L);
+    if ( e1  !=  null ){
+	System.out.println("E1 present");
+    }
+
+    Hibernate query happens & log not printed
+
 ###Performance
 1. Load will do little better but if object is not found, it throws exception.
 
