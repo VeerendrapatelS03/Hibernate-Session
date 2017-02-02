@@ -39,8 +39,8 @@
      emp.addr.name = "bangalore";
      Transaction tx = session.beginTransaction();
      Employee emp1 = session.merge(emp);
-     **emp1 is tracked for changes**
-     **emp is not tracked for changes**
+     //emp1 is tracked for changes
+     //emp is not tracked for changes
      emp1.age = 100
      emp.age = 50
      tx.commit()
