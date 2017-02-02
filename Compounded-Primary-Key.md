@@ -9,6 +9,7 @@ Not only one key, but group of keys together working as primary key. This is kno
 * Annotating members of primary key with @Id
 * Create a separate class with Primary Key Elements & use @EmbeddedId
 * Using Embeddable class
+* Mostly converting existing stuff into compounded primary key
 
 ###1st Approach
 * Annotating each member with @Id
