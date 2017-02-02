@@ -1,5 +1,5 @@
-1. Introduction  
-2. Custom Annotation  
+1. Introduction  _Done_
+2. Custom Annotation  _Done_
 6. get/load/save/persist 
 3. Mapping ( One-to-One, Many-to-Many, One-to-Many ) 
 4. Working with Objects 
