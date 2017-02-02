@@ -8,6 +8,7 @@
   - Anything can change in the class without impacting anything in database.
 
 ###Mechanism to create synthetic keys
+In all the below cases, persistence provider is Hibernate
 * AUTO           Indicates that the persistence provider should pick an appropriate strategy for the particular database.
 * IDENTITY       Indicates that the persistence provider must assign primary keys for the entity using a database identity column.
 * SEQUENCE       Indicates that the persistence provider must assign primary keys for the entity using a database sequence.
