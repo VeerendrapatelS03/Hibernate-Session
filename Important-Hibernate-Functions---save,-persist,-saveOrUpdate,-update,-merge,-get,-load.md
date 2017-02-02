@@ -5,7 +5,7 @@
 * Used to save entity in database
 * Issue: If we use this without transaction & we have cascading between entities, then only primary key gets save unless we flush the session.
 
-For example, Employee have address. Employee & Address gets saved to different table. If we use save() without doing session.flush()/close(), only primary key gets saved not others.
+> For example, Employee have address. Employee & Address gets saved to different table. If we use save() without doing session.flush()/close(), only primary key gets saved not others.
 
 * We should not use save outside transaction boundaries.
 * save() method returns generated id immediately, this is possible because primary object is saved as soon as save method is invoked
