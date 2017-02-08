@@ -1,12 +1,13 @@
 ###Class Structure
 
- Name           Type              Fields        Transient
+    Name           Type              Fields        Transient
   
- SuperBook      (Base Class)      location   
+    SuperBook      (Base Class)      location   
 
- BookSuperClass (Base Class)      id, name
+    BookSuperClass (Base Class)      id, name
 
- ComputerBook   (Entity Class)    language       address
+    ComputerBook   (Entity Class)    language       address
+
 
 ###Notes
 * @MappedSuperclass, Annotate each base class with this.
