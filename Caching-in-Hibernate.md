@@ -21,6 +21,8 @@
 * Primary Caching is not available across different session.
 * But, same entity is usually accessed across session. To minimize db access, secondary caching functionality kicks in.
 
+Primary Level cache is accessed prior to Secondary Level Cache
+
 ###How Secondary Level Cache Works ?
 1. Whenever we are trying to load an entity, first check happens to first level cache.
 2. Only if data is not present there in first level, lookup happens in second level cache.
