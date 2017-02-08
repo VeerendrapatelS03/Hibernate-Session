@@ -121,7 +121,8 @@ Primary Level cache is accessed prior to Secondary Level Cache
                             perfect candidate for cleanup.
 * The amount of data that is present in cache is limited.
 
-	<cache name="student" maxEntriesLocalHeap="10000" eternal="false"
+	
+    <cache name="student" maxEntriesLocalHeap="10000" eternal="false"
 		timeToIdleSeconds="5" timeToLiveSeconds="10">
 		<persistence strategy="localTempSwap" />
 	</cache>
