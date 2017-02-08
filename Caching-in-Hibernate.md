@@ -80,9 +80,9 @@ Primary Level cache is accessed prior to Secondary Level Cache
     </dependency>
 
     <dependency>
-    <groupId>net.sf.ehcache</groupId>
-    <artifactId>ehcache-core</artifactId>
-    <version>2.6.9</version>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache-core</artifactId>
+      <version>2.6.9</version>
     </dependency>   
 
 ##Steps to integrate EhCache to Hibernate Project
