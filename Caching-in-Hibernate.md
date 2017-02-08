@@ -48,17 +48,14 @@ Primary Level cache is accessed prior to Secondary Level Cache
 ###Configuring entity classes
 1. @Cache enables an entity for caching
 2. @Cache(usage=CacheConcurrencyStrategy.*)
-   Caching strategies are as follows :-  
+   
+###Caching strategies are as follows :-  
 
-   none - No Caching will happen
-
-   read-only - If application is read only & not modify, read only cache will be used
-
-   read-write - caching support read write operations
-
-   nonstrict-read-write - Occational need to update data, fast & optimized for minimal write operation
-
-   transactional - Concurrent caches where both reading & writing entities are aware of the changes, eg JBoss TreeCache
+   * none - No Caching will happen
+   * read-only - If application is read only & not modify, read only cache will be used
+   * read-write - caching support read write operations
+   * nonstrict-read-write - Some applications only rarely need to modify data. This is the case if two transactions are unlikely to try to update the same item simultaneously. In this case, you do not need strict transaction isolation, and a nonstrict-read-write cache might be appropriate. 
+   * transactional - Concurrent caches where both reading & writing entities are aware of the changes, eg JBoss TreeCache
 
 ###Dependencies
      <dependency>
