@@ -122,10 +122,16 @@ Primary Level cache is accessed prior to Secondary Level Cache
       The amount of data that is present in cache is limited.
 
 	
-    <cache name="student" maxEntriesLocalHeap="10000" eternal="false"
+      <cache name="student" maxEntriesLocalHeap="10000" eternal="false"
 		timeToIdleSeconds="5" timeToLiveSeconds="10">
 		<persistence strategy="localTempSwap" />
 	</cache>
+
+        Create a cache region of name "student".
+        Configure max entries in the region.
+        Config caching strategy mention the location you want to cache.
+        timeToIdleSeconds - The amount of time if a memory in cache is not accessed, is labelled stale
+
 
 	<cache name="org.hibernate.cache.internal.StandardQueryCache"
 		maxEntriesLocalHeap="5" eternal="false" timeToLiveSeconds="120">
