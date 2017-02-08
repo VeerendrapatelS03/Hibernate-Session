@@ -7,9 +7,9 @@
 8. Query Mapped Objects 
 9. Compounded Primary Keys _Done_
 10. Secondary Table _Done_
-11. Mapping Super Class 
-12. Mapping Collections 
-13. Caching 
+11. Mapping Super Class _Done_
+12. Mapping Collections _Done_
+13. Caching _Done_
 14. Transactions
 15. HQL 
 16. HCQL  
