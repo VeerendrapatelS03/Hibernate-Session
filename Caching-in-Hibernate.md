@@ -99,7 +99,7 @@ Primary Level cache is accessed prior to Secondary Level Cache
 ###Cache configuration File
     
     <?xml version="1.0" encoding="UTF-8"?>
-<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
 	monitoring="autodetect" dynamicConfig="true">
 
@@ -111,6 +111,12 @@ Primary Level cache is accessed prior to Secondary Level Cache
 		memoryStoreEvictionPolicy="LRU" statistics="true">
 		<persistence strategy="localTempSwap" />
 	</defaultCache>
+
+        Configure the default Caching settings 
+        timeToIdleSeconds - Time in seconds if till which a memory in cache is not accessed, considered idle.
+        diskSpoolBufferSizeMB - Memory in MB reserved by default for cache
+        memoryStoreEvictionPolicy - strategy for evicting(removing) data from cache 
+        LRU - Least Recently Used, The data on cache that was least recently used is perfect candidate for cleanup.
 
 	<cache name="student" maxEntriesLocalHeap="10000" eternal="false"
 		timeToIdleSeconds="5" timeToLiveSeconds="10">
