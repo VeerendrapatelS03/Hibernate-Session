@@ -112,14 +112,14 @@ Primary Level cache is accessed prior to Secondary Level Cache
 		<persistence strategy="localTempSwap" />
 	</defaultCache>
 
-* Configure the default Caching settings 
-* timeToIdleSeconds - Time in seconds if till which a memory in cache is not 
+      Configure the default Caching settings 
+      timeToIdleSeconds - Time in seconds if till which a memory in cache is not 
                             accessed, considered idle.
-* diskSpoolBufferSizeMB - Memory in MB reserved by default for cache
-* memoryStoreEvictionPolicy - strategy for evicting(removing) data from cache 
-* LRU - Least Recently Used, The data on cache that was least recently used is 
+      diskSpoolBufferSizeMB - Memory in MB reserved by default for cache
+      memoryStoreEvictionPolicy - strategy for evicting(removing) data from cache 
+      LRU - Least Recently Used, The data on cache that was least recently used is 
                             perfect candidate for cleanup.
-* The amount of data that is present in cache is limited.
+      The amount of data that is present in cache is limited.
 
 	
     <cache name="student" maxEntriesLocalHeap="10000" eternal="false"
