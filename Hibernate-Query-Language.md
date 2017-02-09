@@ -36,6 +36,16 @@
 ###ORDER BY Clause
 * Sort HQL queries - ASC/DESC
 
+
+                String hql = "SELECT S.name FROM stdinfo S WHERE S.age > 20 ORDER BY S.age DESC";
+		Query q = session.createQuery(hql);
+		
+		List<String> res = q.list();
+		
+		for(String s: res){
+			System.out.println(s);
+		}
+
 ###GROUP BY Clause
 * This lets hibernate pull information & group it based on a value of an attribute.
 * This is used more for aggregate value
