@@ -11,6 +11,15 @@
 * from Student
 * from my.Student - If you need fully qualified class name in HQL
 
+    String hql = "FROM stdinfo";
+    Query q = session.createQuery(hql);
+			
+    List<Student> res = q.list();
+    for (Student s: res){
+	System.out.println(s);
+    }
+
+
 ###AS Clause
 * Assign aliases to the classes in HQL queries
 * AS keyword is optional FROM Student S
