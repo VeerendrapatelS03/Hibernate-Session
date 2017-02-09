@@ -11,6 +11,7 @@
 * from Student
 * from my.Student - If you need fully qualified class name in HQL
 
+
     String hql = "FROM stdinfo";
     Query q = session.createQuery(hql);
 			
