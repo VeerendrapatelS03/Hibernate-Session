@@ -54,6 +54,16 @@
 ###UPDATE Clause
 * Provides an option to update a specific entry.
 
+    String hql = "UPDATE stdinfo set age = :age WHERE name = :name";
+		
+		Query query = session.createQuery(hql);
+		query.setParameter("age", 770);
+		query.setParameter("name", "Cnny");
+		
+		int res = query.executeUpdate();
+		System.out.println(res);
+		tx.commit();
+
 ###DELETE Clause
 * Delete one or more objects
 
