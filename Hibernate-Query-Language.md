@@ -37,7 +37,7 @@
 * Sort HQL queries - ASC/DESC
 
 
-                String hql = "SELECT S.name FROM stdinfo S WHERE S.age > 20 ORDER BY S.age DESC";
+            String hql = "SELECT S.name FROM stdinfo S WHERE S.age > 20 ORDER BY S.age DESC";
 		Query q = session.createQuery(hql);
 		
 		List<String> res = q.list();
