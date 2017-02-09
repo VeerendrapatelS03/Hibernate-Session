@@ -11,10 +11,10 @@
 12. Mapping Collections _Done_
 13. Caching _Done_
 14. Transactions _Done_
-15. HQL 
-16. HCQL  
-17. Criteria, Restrictions, Projections 
-18. Named Query 
+15. HQL _Done_
+16. HCQL  _Done_
+17. Criteria, Restrictions, Projections _Done_ 
+18. Named Query _Done_
 19. Hibernate Interceptors _Done_
 19. Spring Hibernate Integration 
 20. NoSQL Integration 
