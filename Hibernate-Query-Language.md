@@ -68,7 +68,7 @@
 * Delete one or more objects
 
 
-    String hql = "DELETE FROM Student WHERE name = :name";
+      String hql = "DELETE FROM Student WHERE name = :name";
 		Query query = session.createQuery(hql);
 		query.setParameter("name", "Jill");
 		int res = query.executeUpdate();
