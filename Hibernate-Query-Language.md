@@ -12,13 +12,13 @@
 * from my.Student - If you need fully qualified class name in HQL
 
 
-    String hql = "FROM stdinfo";
-    Query q = session.createQuery(hql);
-			
-    List<Student> res = q.list();
-    for (Student s: res){
-	System.out.println(s);
-    }
+>     String hql = "FROM stdinfo";
+>     Query q = session.createQuery(hql);
+> 			
+>     List<Student> res = q.list();
+>     for (Student s: res){
+> 	System.out.println(s);
+>     }
 
 
 ###AS Clause
