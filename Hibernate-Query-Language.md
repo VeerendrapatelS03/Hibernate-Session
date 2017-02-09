@@ -67,6 +67,7 @@
 ###DELETE Clause
 * Delete one or more objects
 
+
     String hql = "DELETE FROM Student WHERE name = :name";
 		Query query = session.createQuery(hql);
 		query.setParameter("name", "Jill");
@@ -74,6 +75,7 @@
 		
 		System.out.println(res);
 		tx.commit();
+
 
 ###INSERT Clause
 * HQL supports INSERT INTO clause only where records can be inserted from one object to another.
